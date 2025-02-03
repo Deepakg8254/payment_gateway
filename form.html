@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            
+            <!-- Personal Details -->
+            <h3>Personal Details</h3>
+            <label>Full Name:</label>
+            <input type="text" name="full_name" required><br><br>
+            
+            <label>Date of Birth:</label>
+            <input type="date" name="date_of_birth" required><br><br>
+            
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female" required>Female<br><br>
+            
+            <label>Contact Number:</label>
+            <input type="text" name="contact_number" required><br><br>
+            
+            <label>Email Address:</label>
+            <input type="email" name="email_address" required><br><br>
+            
+            <label>City:</label>
+            <input type="text" name="city" required><br><br>
+            
+            <label>State:</label>
+            <input type="text" name="state" required><br><br>
+            
+            <label>Pin Code:</label>
+            <input type="text" name="pin_code" required><br><br>
+            
+            <!-- Identification Information -->
+            <h3>Identification Information</h3>
+            <label>Passport Size Photo:</label>
+            <input type="file" name="passport_photo" required><br><br>
+            
+            <label>Aadhaar Card:</label>
+            <input type="file" name="aadhaar_card" required><br><br>
+            
+            <label>PAN Card:</label>
+            <input type="file" name="pan_card" required><br><br>
+            
+            <!-- Declaration & Consent -->
+            <h3>Declaration & Consent</h3>
+            <input type="checkbox" name="declaration" required>I declare that the information provided is accurate.<br><br>
+            <input type="checkbox" name="consent" required>I consent to the use of my data for communication and service-related purposes.<br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
